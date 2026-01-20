@@ -5,9 +5,11 @@ public class Calculator {
         return a + b;
     }
 
-    public static int divide(int a, int b) {
-    // BUG: falscher Divisor -> Division durch 0
-    return a / 0;
+    public static Integer divide(int a, int b) {
+        if(b == 0){
+            return null;
+        }
+    return a / b;
 }
 
 }

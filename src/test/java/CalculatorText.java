@@ -13,4 +13,13 @@ class CalculatorTest {
     void divide_works() {
         assertEquals(5, Calculator.divide(10, 2));
     }
+
+    @Test
+    void divide_works2() {
+        assertEquals(6, Calculator.divide(48, 8));
+    }
+    @Test
+    void divide_works3() {
+        assertEquals(null, Calculator.divide(48, 0));
+    }
 }
